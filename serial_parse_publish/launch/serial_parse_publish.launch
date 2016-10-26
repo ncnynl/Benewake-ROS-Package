@@ -1,9 +1,7 @@
 <launch>
 	<param name="StrengthThreshold" value="0" />
 	<param name="QualityThreshold" value="0" />
-	<param name="COM" value="/dev/ttyUSB0" />
+	<param name="COM" value="/dev/ttyUSB1" />
 	<param name="BitRate" value="115200" />
-	<node pkg="serial_parse_publish" type="DESerialPort_node" name="DESerialPort_node">
-
-	</node>
+	<node pkg="serial_parse_publish" type="DESerialPort_node" name="DESerialPort_node" />
 </launch>

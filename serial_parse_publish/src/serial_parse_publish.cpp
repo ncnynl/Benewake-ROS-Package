@@ -113,7 +113,7 @@ int main (int argc, char** argv){
             //header-stamp
             de_laser_scan.header.stamp = ros::Time::now();
             //header-frame_id:1-gloable, 0-no frame
-            de_laser_scan.header.frame_id = "base_laser_link";
+            de_laser_scan.header.frame_id = "laser";
             //publish scan
             read_pub.publish(de_laser_scan);
             //clear
